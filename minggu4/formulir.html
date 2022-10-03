@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Belajar HTML - Membuat Form</title>
+        <style>
+            body{
+                margin: 0;
+            }
+        </style>
+    </head>
+<body> 
+    <div style="
+    background-color: #ac3bbb;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  ">
+   <div>
+    <h1
+      style="
+        margin: 0px;
+        padding: 10px;
+        color: #ebecff;
+        padding-bottom: 5px;
+      "
+    >
+      shifatush shafwah
+    </h1>
+    <p
+      style="
+        margin: 0px;
+        text-align: left;
+        padding-left: 20px;
+        color: #ebecff;
+        font-size: 18px;
+      "
+    >
+      Universitas Dian Nuswantoro
+    </p>
+  </div>
+  <div style="margin-right: 70px">
+    <a
+      href="https://www.instagram.com/zxfaaaaash/?igshid=YmMyMTA2M2Y%3D"
+      style="color: #ac3bbb"
+    >
+      <img
+        src="instagramm.png"
+        alt=""
+        width="30px"
+        height="30px"
+        style="margin-top: 35px"
+      />
+    </a>
+    <a href="https://github.com/shifatush03" style="color: #ac3bbb">
+      <img
+        src="github.png"
+        alt=""
+        width="35px"
+        height="20px"
+        style="margin-bottom: 5px"
+      />
+    </a>
+    <a href="https://medium.com/@shifaa" style="color: #ac3bbb">
+      <img
+        src="medium.png"
+        alt=""
+        width="60px"
+        height="35px"
+        style="margin-top: 35px; margin-left: -5px"
+      />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/shifaftush03"
+      style="color: #5a9cfc"
+    >
+      <img
+        src="linkedln.png"
+        alt=""
+        width="35px"
+        height="35px"
+        style="margin-top: 35px; margin-left: -10px"
+      />
+    </a>
+  </div>
+  </div>
+<form action="form.php" method="POST">
+<!-- letakkan field di sini -->
+<fieldset>
+<legend><h1>Formulir Pendaftaran Siswa</h1></legend>
+<table>
+    <tr>
+        <td>Nama Calon Siswa</td>
+        <td>:</td>
+        <td><input type="name" name="nama"  required/><br /></td>
+    </tr>       
+
+    <tr>
+        <td>Tempat/Tanggal Lahir</td>
+        <td>:</td>
+        <td><input type="name" name="tempatlahir"/> <input type="date" name="tanggal" required /></td>
+    </tr>
+
+    <tr>
+        <td>Agama</td>
+        <td>:</td>
+        <td><select name="agama">
+            <option value="islam"> Islam</option>
+            <option value="kristen"> Kristen</option>
+            <option value="katolik"> Katolik</option>
+            <option value="budha"> Budha</option>
+            <option value="hindu"> Hindu</option>
+        </select></td>
+    </tr>
+
+    <tr>
+        <td>Alamat</td>
+        <td>:</td>
+        <td><textarea name="alamat" rows="4" cols="50" required></textarea> </td>
+    </tr>
+
+    <tr>
+        <td>No Telp/Hp</td>
+        <td>:</td>
+        <td><input type="number" name="nomerhp" required/></td>
+    </tr>
+
+    <tr>
+        <td>Jenis Kelamin</td>
+        <td>:</td>
+        <td><input type="radio" name="jk" value="pria"/> Pria
+            <input type="radio" name="jk" value="wanita"/> Wanita</td>
+    </tr>
+
+    <tr>
+        <td>Hobi</td>
+        <td>:</td>
+        <td><input type="checkbox" name="hobi" value="membaca"/> Membaca </input>
+            <input type="checkbox" name="hobi" value="menulis"/> Menulis </input>
+            <input type="checkbox" nam=e="hobi" value="olahraga"/> Olahraga </input></td>
+    </tr>
+
+    <tr>
+        <td>Pas Foto</td>
+        <td>:</td>
+        <td><input type="file" name="foto" /></td>
+    </tr>
+
+    <tr>
+        <td><input type="submit" name="submit" value="SUBMIT"/></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
+</fieldset>
+
+</form>
+<div style="background-color: #ac3bbb; padding: 60px; margin-top: 50px;"></div>
+</body>
+</html>
