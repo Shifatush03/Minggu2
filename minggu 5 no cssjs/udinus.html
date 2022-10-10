@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minggu-5</title>
+	<style>
+			
+		.head1 {
+			font-size:40px;
+			color:#32b453;
+			font-weight:bold;
+		}
+		.head2 {
+			font-size:17px;
+			margin-left:10px;
+			margin-bottom:15px;
+		}
+		body {
+			margin: 0 auto;
+			background-position:center;
+			background-size: contain;
+		}
+	
+		.menu {
+			position: sticky;
+			top: 0;
+			background-color: #000000;
+			padding:10px 0px 10px 0px;
+			color:white;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.menu a {
+			float: left;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 20px;
+		}
+		.menu-log {
+			right: auto;
+			float: right;
+		}
+		footer {
+			width: 100%;
+			bottom: auto;
+			background-color: #000;
+			color: #fff;
+			position: absolute;
+			padding-top:20px;
+			padding-bottom:50px;
+			text-align:center;
+			font-size:30px;
+			font-weight:bold;
+		}
+		.body_sec {
+			margin-left:20px;
+		}	
+		details > summary {
+		padding: 4px;
+		width: 200px;
+		background-color: #eeeeee;
+		border: none;
+		box-shadow: 1px 1px 2px #bbbbbb;
+		cursor: pointer;
+		}
+
+		details > p {
+		background-color: #eeeeee;
+		padding: 4px;
+		margin: 0;
+		box-shadow: 1px 1px 2px #bbbbbb;
+		}
+		
+		
+
+	</style>
+</head>
+		
+<body>
+	
+	<!-- Header Section -->
+	<header>
+		
+		<div class="head1">Shifatush Shafwah</div>
+		<div class="head2">A11.2022.14078</div>
+	</header>
+	
+	<!-- Menu Navigation Bar -->
+	<nav class="menu">
+		<a href="#home">Minggu 5</a>
+	</nav>
+	
+	<!-- Body section -->
+	<h2 style="
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    margin-top: -3px;
+  "><p><b><i>Time</i></b></p></h2>
+	<h1>
+		<p>Artikel ini ditulis pada <time datetime="2020-20-07">09 Oktober 2020</time> <time>18:23</time>
+		</p>
+	</h1>
+	
+	<main class = "body_sec">
+		<section id="Content">
+			<p>Halo nama saya Shifatush Shafwah dengan NIM A11.2022.14078. Saya berasal dari Pemalang, Jawa Tengah. Saat ini sedang kuliah di Universitas Dian Nuswantoro, Prodi Teknik Informatika, Fakultas Ilmu Komputer</p>
+		</section>
+	</main>
+	<br>
+	<!-- Summary.html Section -->
+	<h2 style="
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    margin-top: -3px;
+  ">
+		<p><b><i>SUMMARY</i></b></p>
+    </h2>
+	<h3 style="
+    text-align: center;
+    margin-bottom: 20px;
+    color: #bbbbbb;
+    margin-top: -3px;
+  ">Jenis jenis pada batang</h3>
+<details>
+  <summary>Batang Basah</summary>
+  <p>Batang basah(herbaceous) Batang Basah adalah batang yang berlunak dan berair.
+</p>
+</details>
+
+<details>
+    <summary>Batang Berkayu (lignosus)
+    Batang berkayu adalah batang yang umumnya kuat dan keras.
+    </summary>
+    <p>
+	</p>
+  </details>
+
+  <details>
+    <summary> Batang rumput (calmus)
+    </summary>
+    <p>Batang rumput adalah batang yang tidak keras.
+  </details>
+
+  <details>
+    <summary> Batang Mendong (calamus)
+    </summary>
+    <p>
+  </details>
+
+  <!-- Audio.html Section -->
+  <h2 style="
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+  margin-top: -3px;
+"><p><b><i>AUDIO</i></b></p></h2>
+
+    </h3>
+    <div style="text-align: center ;margin-top: 20px;">
+     <h1 style="color: #5a9cfc">Audio musik armada</h1>
+     <hr width="400px" color=" #5a9cfc" />
+     <h3>
+       
+     </h3>
+     <audio controls src="Armada - Apa Kabar Sayang (Official Video).ogg" type="audio/ogg"></audio>
+   </div>
+
+
+
+    </h3>
+    <div style="text-align: center ;margin-top: 20px;">
+     <h1 style="color: #5a9cfc">Audio Suara</h1>
+     <hr width="400px" color=" #5a9cfc" />
+     <h3>
+  	<!-- Audio2.html Section -->       
+     </h3><p><b><i>Audio 2 with button controls</i></b></p></h2>
+     <button onclick="playAudio()" type="button">Play Audio</button>
+     <button onclick="pauseAudio()" type="button">Pause Audio</button><br>
+     <audio id ="myAudio" width="auto" height="auto" controls>
+     <source src="voice notee.ogg" type="audio/ogg"></audio>
+   </div>
+	  
+
+	<script>
+    var x = document.getElementById("myAudio");
+
+	function playAudio() {
+  	x.play();
+	}
+
+	function pauseAudio() {
+	x.pause();
+	}
+    </script>
+
+	<!-- Video.html Section -->
+	<h2 style="
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    margin-top: -3px;
+  "><p><b><i>VIDEO</i></b></p></h2>
+    <div style="text-align: center ;margin-top: 20px;">
+        <h1 style="color: #5a9cfc">Video</h1>
+        <hr width="400px" color=" #5a9cfc" />
+<div style="text-align: center;">
+    <figure id="videoContainer" data-fullscreen="false">
+      <video id="video" controls preload="metadata" width="800px" height="500px">
+        <source src="video jawa.mp4" type="video/mp4" />
+      </video>
+	<!-- Gif.html Section -->
+    <div style="text-align: center ;margin-top: 20px;">
+        <h1 style="color: #5a9cfc">Video GIF</h1>
+        <hr width="400px" color=" #5a9cfc" />
+	<img src="gif.mp4" alt="Computer man" style="width:250px;height:250px;"></body><br>
+
+	<!-- Video sub.html Section -->
+    <div style="text-align: center ;margin-top: 20px;">
+        <h1 style="color: #5a9cfc">Video Subtitle</h1>
+        <hr width="400px" color=" #5a9cfc" />
+	<a href="sub-en.vtt" target="_blank"></a>
+    <video width="800px" height="500px" controls>
+      <source src="y2mate.com - MAHALINI  SISA RASA OFFICIAL MUSIC VIDEO_1080p.mp4" type="video/mp4">
+      <source src="./MIB2.webm" type="video/webm">
+      <track label="pt" kind="subtitles" srclang="pt" src="sub-en.vtt" default />
+    </video>
+
+	<!-- Video Youtube.html Section -->
+    <div style="text-align: center ;margin-top: 20px;">
+        <h1 style="color: #5a9cfc">Video Youtube</h1>
+        <hr width="400px" color=" #5a9cfc" />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Bzyj1LTfgsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<!-- Footer Section -->
+	<footer>Universitas Dian Nuswantoro</footer>
+	
+</body>
+</html>
