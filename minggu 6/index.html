@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contoh Project Pemrograman Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      /* Style the header */
+      header {
+        background-color: #5a9cfc;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+      }
+
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: left;
+        width: 15%;
+        background: #fff;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+      }
+      nav ul li {
+        list-style-type: none;
+        padding: 10px;
+        padding-top: 30px;
+      }
+      nav ul li a {
+        list-style-type: none;
+        padding: 0;
+        text-decoration: none;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 85%;
+        background-color: #f1f1f1;
+        height: 100%;
+      }
+
+      /* Clear floats after the columns */
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      div {
+        display: flex;
+      }
+
+      p {
+        width: 55%;
+        padding: 30px;
+        padding-left: 10%;
+      }
+      h1 {
+        text-align: center;
+        font-size: 30px;
+        margin-top: -5px;
+      }
+      table {
+        margin-left: 130px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #5a9cfc;
+        padding: 20px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Tugas Keenam</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="cv.pdf" download="CV Dhea Sabilla"
+              >Dowloand CV</a
+            >
+          </li>
+          <li>
+            <a
+              href="kontak.html"
+              >Kontak</a
+            >
+          </li>
+          <li>
+            <a
+              href="tentang.html"
+              >Tentang</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <img
+            src="logo udinus.png"
+            alt=""
+            width="100px"
+            height="100px"
+            style="margin-top: 12px; margin-left: 20px"
+          />
+          <img src="logoFIK.png" alt="" width="165px" height="125px" />
+        </div>
+        <h1>BIODATA MAHASISWA</h1>
+        <div>
+          <table>
+            <tr>
+              <td>Nama</td>
+              <td>:</td>
+              <td>Shifatush Shafwah</td>
+            </tr>
+            <tr>
+              <td>NIM</td>
+              <td>:</td>
+              <td>A11.2022.14078</td>
+            </tr>
+            <tr>
+              <td>Dosen Wali</td>
+              <td>:</td>
+              <td>L.Handoko@dsn.dinus.ac.id</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td>:</td>
+              <td>Aktif</td>
+            </tr>
+            <tr>
+              <td>Alamat Semarang</td>
+              <td>:</td>
+              <td>
+                Jl.Arjuna no 34
+              </td>
+            </tr>
+            <tr>
+              <td>Alamat Asal</td>
+              <td>:</td>
+              <td>Desa wiyorowetan kec.ulujami kab.pemalang RT01/RW03</td>
+            </tr>
+            <tr>
+              <td>No HP</td>
+              <td>:</td>
+              <td>089651931504</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>:</td>
+              <td>111202214078@mhs.dinus.ac.id</td>
+            </tr>
+            <tr>
+              <td>Agama</td>
+              <td>:</td>
+              <td>Islam</td>
+            </tr>
+          </table>
+          <img
+            src="fotoshifa.jpg"
+            alt=""
+            width="200px"
+            height="250px"
+            style="margin-left: 8%"
+          />
+        </div>
+        <div style="max-width: 600px; margin: auto">
+          <table border="1" width="100%" style="margin: 0">
+            <thead>
+              <tr>
+                <th>Skill</th>
+                <th>Pengalaman</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul>
+                    <li>Edit foto</li>
+                    <li>Html & CSS</li>
+                  </ul>
+                </td>
+                <td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="justify-content: center">
+          <a
+            href="https://www.instagram.com/zxfaaaaash/?igshid=YmMyMTA2M2Y%3D"
+            style="color: #5a9cfc"
+          >
+            <img
+              src="instagram.png"
+              alt=""
+              width="30px"
+              height="30px"
+              style="margin-top: 35px"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/shifatush03470a531ba">
+            <img
+              src="linkedin .png"
+              alt=""
+              width="35px"
+              height="35px"
+              style="margin-top: 33px"
+            />
+          </a>
+          <a href="https://medium.com/@shifaa">
+            <img
+              src="image/medium.png"
+              alt=""
+              width="30px"
+              height="30px"
+              style="margin-top: 37px"
+            />
+          </a>
+          <a href="https://github.com/shifatush03">
+            <img
+              src="github.png"
+              alt=""
+              width="23px"
+              height="23px"
+              style="margin-top: 40px; margin-left: 10px"
+            />
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <h2>Copyright &copy; 2020 Shifatush Shafwah - A11.2022.14078</h2>
+    </footer>
+  </body>
+</html>
+Footer
