@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contoh Internal CSS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      /* Style the header */
+      header {
+        background-color: #11aeef;
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+        justify-content: space-between;
+        float: right;
+      }
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: right;
+        margin-top: 20px;
+        margin-right: 80px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        margin-left: 15px;
+      }
+      section {
+        background-color: #11aeef;
+        top: 0;
+        padding-top: 200px;
+        padding-left: 150px;
+        padding-bottom: 150px;
+      }
+      h1 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: white;
+        font-size: 60px;
+      }
+      p {
+        color: white;
+        font-size: 20px;
+        margin-top: 0;
+      }
+      .divheader{
+        display: flex;
+      }
+      .divgambar {
+        margin-left: 100px;
+        margin-top: -30px;
+      }
+      article {
+        padding-left: 100px;
+        padding-top: 40px;
+      }
+      .artikel {
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+      p {
+        color: black;
+      }
+      .navbar {
+        color: white;
+      }
+      .divartikel {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 50px;
+      }
+      .divimage {
+        float: left;
+      }
+      footer {
+        background-color: #11aeef;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        margin-bottom: 0;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+
+      <nav>
+        <a href="C:/git/Belajar%20HTML/Minggu2/minggu%208/css1.html"
+          >Css1</a
+        >
+        <a href="C:/git/Belajar%20HTML/Minggu2/minggu%208/css2.html"
+          >Css2</a
+        >
+        <a href="C:/git/Belajar%20HTML/Minggu2/minggu%208/css3.html"
+          >Css3</a
+        >
+        <a href="C:/git/Belajar%20HTML/Minggu2/minggu%208/css4.html"
+          >Css4</a
+        >
+        <a href="C:/git/Belajar%20HTML/Minggu2/minggu%208/css5.html"
+          >Css5</a
+        >
+        <a href="C:/git/Belajar%20HTML/Minggu2/minggu%208/css6.html"
+          >Css6</a
+        >
+        <a href="C:/git/Belajar%20HTML/Minggu2/minggu%208/css7.html"
+          >Css7</a
+        >
+        <a href="C:/git/Belajar%20HTML/Minggu2/minggu%208/css8.html"
+          >Css8</a
+        >
+      </nav>
+    </header>
+    <section>
+      <div class="divheader">
+        <div>
+          <h1>Profilku</h1>
+          <p class="navbar">HALLO</p>
+          <p class="navbar">
+            Perkenalkan Nama Saya Shifatush Shafwah <br />
+            dengan NIM A11.2022.1078 <br />
+            Saya adalah Mahasiswa baru dari Universitas Dian Nuswantoro (Udinus)
+          </p>
+        </div>
+        <div class="divgambar">
+          <img src="gambar/foto shifa2.png" alt="" width="300px" height="350px" />
+        </div>
+      </div>
+    </section>
+    <article>
+      <h1 class="artikel">Universitas Dian Nuswantoro (UDINUS)</h1>
+      <div class="divartikel">
+        <img src="gambar/udinus.png" alt="" width="500px" height="300px" />
+        <p>
+          Universitas Dian Nuswantoro adalah universitas swasta yang didirikan
+          <br />
+          oleh Yayasan Dian Nuswantoro Semarang. Yayasan ini terdiri dari <br />
+          beberapa sekolah tinggi yang memfokuskan di beberapa ilmu tertentu
+          <br />
+          yaitu Sekolah Tinggi Manajemen Informatika dan Komputer,<br />
+          Sekolah Tinggi Ilmu Ekonomi, Sekolah Tinggi Bahasa Asing, <br />
+          dan Sekolah Tinggi Kesehatan.
+        </p>
+      </div>
+    </article>
+    <footer>
+      <p>Copyright@shifatushshafwah2022</p>
+    </footer>
+  </body>
+</html>

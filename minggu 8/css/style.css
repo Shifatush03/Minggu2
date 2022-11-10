@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #11aeef;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    margin-top: 20px;
+    margin-right: 80px;
+    margin-left: auto;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  section {
+    padding: 40px;
+    padding-left: 150px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .divtabeldata {
+    display: flex;
+  }
+  .imagedata {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  
+  .tabeldata {
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+  .tabeljadwal {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .judul {
+    background-color: #11aeef;
+    color: white;
+  }
+  footer {
+    background-color: #11aeef;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+  }
+  Footer
