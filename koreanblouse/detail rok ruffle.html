@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blouse Store</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+</head>
+<body>
+    <app-bar>
+    <a href="#mainContent" class="skip-link">Skip to Content</a>
+    <div class="app-bar-menu">
+      <button id="hamburgerButton">☰</button>
+    </div>
+    <div class="app-bar-brand">
+      <h1>Blouse Store</h1>
+    </div>
+    <nav id="navigationDrawer" class="app-bar-navigation">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="cari.html">Temukan</a></li>
+        <li><a href="inbox.html">Kotak Masuk</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+</app-bar>
+<main id="mainContent" tabindex="0">
+    <div id="blouse" class="blouse">
+        <h2 class="blouse-name">Rok Ruffle</h2>
+        <img class="blouse-poster" src="./assets/img/rok ruffle.jpeg" alt="Blouse Natural" />
+        <div class="blouse-info">
+            <h2>Information</h2>
+            <h4>Price</h4>
+            <p>Rp. 200.000</p>
+            <h4>Material</h4>
+            <p>Katun front button ruffle detail relaxed solid.</p>
+        </div>
+        <div class="blouse-overview">
+            <h2>Description</h2>
+            <p>Aksi tumpuk material lipit memberikan bagian rok volume extra yang bagus dengan trend masa kini.</p>
+        </div>
+        <div class="blouse-overview">
+            <h2>Ulasan</h2>
+            <div class="customer-reviews-container">
+                <div class="customer-reviews">
+                    <div class="name-date">
+                      <strong>Rina nose</strong>
+                      <span>29 Jan 2022</span>
+                    </div>
+                    <div class="customer-review">
+                      <p>Bagus roknya lucu dan tidak nerawang bahan berkualitas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="likeButtonContainer">
+      <button aria-label="like this blouse" id="cartButton" class="cart">
+          <img src="./assets/icon/cart.png" alt="" srcset="" width="25">
+      </button>
+  </div>
+</main>
+<footer-bar>
+  <p>Copyright &copy 2022 - <span class="footer-product">Blouse Store</span></p>
+</footer-bar>
+</body>
+<script src="./assets/app.js"></script>
+</html>

@@ -1,0 +1,359 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+     
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(214, 149, 92);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* hero element */
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+    width: 100%;
+    text-align: center;
+    background: rgb(212, 193, 159);
+    background-position-x: center;
+    background-position-y: 50%;
+    background-size: cover;
+  
+  }
+  
+  .hero-inner {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  
+  .hero-title {
+    color: #fff;
+    font-weight: 800;
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+  
+  .hero-tagline {
+    color: #fff;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  /* app-bar */
+  
+  app-bar {
+    padding: 8px 16px;
+    background-color: rgb(169, 92, 53);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+     
+  app-bar .app-bar-menu {
+    display: flex;
+    align-items: center;
+  }
+     
+  app-bar .app-bar-menu button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+     
+  app-bar .app-bar-brand {
+    display: flex;
+    align-items: center;
+  }
+     
+  app-bar .app-bar-brand h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    user-select: none;
+    font-family: 'Satisfy', cursive;
+  }
+     
+  app-bar .app-bar-navigation {
+    position: absolute;
+    top: 50px;
+    left: -180px;
+    width: 150px;
+    transition: all 0.3s;
+    padding: 8px;
+    background-color: white;
+    overflow: hidden;
+  }
+     
+  app-bar .app-bar-navigation.open {
+    left: 0;
+  }
+     
+  app-bar .app-bar-navigation ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  
+  /* main element */
+  
+  main {
+    flex: 1;
+  }
+    
+  .content {
+    margin: 0 auto;
+    min-height: 100%;
+  }
+
+  .search{
+    position: relative;
+    top: 30px;
+    left: 30%;
+  }
+
+  .content .content-heading {
+    margin: 32px;
+    font-size: 1.5rem;
+  }
+  
+  /* blouse container element */
+  
+  .blouses {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 32px 0;
+    padding: 100px;
+  }
+  
+  /* blouses item element */
+     
+  .blouses-item {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0px 10px 10px 10px;
+  }
+    
+  .blouses-item-header {
+    position: relative;
+  }
+    
+  .blouses-item .blouses-item-header .blouses-item-header-poster {
+    width: 100%;
+    height: 200px;
+  }
+    
+  .blouses-item .blouses-item-header .blouses-item-header-rating {
+    position: absolute;
+    padding: 8px;
+    bottom: 20px;
+    left: 0;
+    display: inline-block;
+    background-color: rgb(232, 193, 121);
+    color: white;
+  }
+    
+  .blouses-item .blouses-item-header .blouses-item-header-rating .blouses-item-header-rating-score {
+    margin-left: 10px;
+  }
+    
+  .blouses-item .blouses-item-content {
+    padding: 16px;
+  }
+  
+  .blouses-item .blouses-item-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .blouses-item .blouses-item-content h4 {
+    margin-bottom: 15px;
+    font-weight: 200;
+  }
+    
+  .blouses-item .blouses-item-content p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+  }
+  
+  .blouses-item .blouses-item-content .cta {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    background: rgb(245, 226, 191);
+    padding: 0 44px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 10px;
+    transition: .5s;
+  }
+    
+  .blouses-item .blouses-item-content .cta:hover{
+    background-color: #dce7f3;
+  }
+  
+  /* blouse container element */
+    
+  .blouse {
+    margin: 0 auto;
+    padding: 32px;
+    width: 100%;
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px 16px;
+  }
+  
+  /* blouse item elemet */
+  
+  .blouse .blouse-poster {
+    width: 100%;
+    max-width: 400px;
+  }
+    
+  .blouse .blouse-info h4 {
+    margin-top: 10px;
+  }
+  
+  .blouse .blouse-overview h2,
+  .blouse-overview .menus .foods h2,
+  .blouse-overview .menus .drinks h2{
+    margin-bottom: 10px;
+  }
+  
+  .blouse .blouse-overview .blouse-menus .blouse-foods{
+  margin-right: 20px;
+  }
+  
+  .blouse .blouse-overview .blouse-menus .blouse-foods ul li,
+  .blouse .blouse-overview .blouse-menus .blouse-drinks ul li{
+  list-style: none;
+  background: #212529;
+  margin: 0 10px 10px 0;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 10px;
+  color: rgb(239, 143, 102);
+  border-radius: 0 5px 5px 10px;
+  }
+  
+  .blouse .blouse-overview .blouse-menus .blouse-foods .blouse-food-list,
+  .blouse .blouse-overview .blouse-menus .blouse-drinks .blouse-drink-list{
+  display: flex;
+  flex-wrap: wrap;
+  }
+  
+  /* customer review element */
+  
+  .customer-reviews-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  }
+  
+  .customer-reviews-container .customer-reviews{
+  width: 100%;
+  box-shadow: 3px 3px 5px 2px rgba(0,0,0,.1);
+  background: white;
+  padding: 20px;
+  margin: 12px;
+  }
+  
+  .customer-reviews-container .customer-reviews .name-date{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  }
+  
+  .customer-reviews-container .customer-reviews .name-date strong{
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: .5px;
+  }
+  
+  .customer-reviews-container .customer-reviews .name-date span{
+  color: #979797;
+  font-size: .8rem;
+  }
+  
+  .customer-reviews-container .customer-reviews .customer-review p{
+  font-size: .9rem;
+  color: #4b4b4b;
+  }
+  
+  /* footer-bar element */
+    
+  footer-bar {
+    background: #3d3d3d;
+    padding: 16px;
+  }
+    
+  footer-bar p {
+    text-align: center;
+    color: #aaaaaa;
+  }
+    
+  footer-bar p a {
+    color: #db0000;
+    text-decoration: none;
+  }
+  
+  footer-bar .footer-product{
+    font-family: 'Satisfy', cursive;
+  }
+  
+  /* favourite button element */
+  
+  .cart {
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: wheat;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* skip to content element */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background-color: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 999999999999999999999999999999;
+    text-decoration: none;
+  }
+  
+  .skip-link:focus {
+    top: 10px;
+  }
